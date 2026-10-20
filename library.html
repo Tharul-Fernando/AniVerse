@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniverse - Movie Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo4.png" alt="Aniverse Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html" class="active">Movie Library</a></li>
+                <li><a href="review.html">Submit a Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Library Header & Search Controls -->
+
+        <section class="library-header">
+            
+            <div class = "header-text">
+                <div class =  "path">
+                <a href = "index.html">Home</a> / Movie Library
+                </div>
+                <h1>Movie & Anime Library</h1>
+                <p>Browse through our extensive collection of movies and anime series.</p>
+            
+            </div>
+            
+            
+            <!-- Search and sorting inputs. IDs are used here so we can grab them easily in using JS -->
+            
+            <div class = "controls">
+
+                <input type = "text" id = "searchInput" aria-label="Search by title" placeholder = "🔍 Search by title...">
+
+                <select id = "sortField">
+
+                    <option value = "default"> Default Sorting </option>
+                    <option value = "ratingHigh"> Rating: High to Low </option>
+                    <option value = "ratingLow"> Rating: Low to High </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- Genre Filtering Section -->
+
+        <section class="filters">
+
+            <!-- The data-genre attributes, JS uses this exact text to filter the XML data -->
+            <button class = "filter-btn active" data-genre = "All"> All Media </button>
+            <button class = "filter-btn" data-genre = "Action"> Action </button>
+            <button class = "filter-btn" data-genre = "Comedy"> Comedy </button>
+            <button class = "filter-btn" data-genre = "Drama"> Drama </button>
+            <button class = "filter-btn" data-genre = "Horror"> Horror </button>
+            <button class = "filter-btn" data-genre = "Fantasy"> Fantasy </button>
+            <button class = "filter-btn" data-genre = "Isekai"> Isekai </button>
+            <button class = "filter-btn" data-genre = "Sci-Fi"> Sci-Fi </button>
+            <button class = "filter-btn" data-genre = "Romance"> Romance </button>
+
+        </section>
+
+        <!-- Movie Display Grid -->
+
+        <section class="movie-grid" id="movieGridContainer">
+            
+        </section>
+
+    </main>
+
+    
+       <footer>
+        
+        <div class = "footer-container">
+            
+            <div class = "footer-column brand-col">
+
+                <img src = "images/logo4.png" alt = "Aniverse Logo">
+                <p>Your Ultimate Entertainment Guide for Movies and Anime Series. Discover, Explore, and Share your Reviews with a Community of Enthusiasts.</p>
+                <div class = "footer-social">
+                    <a href = "https://www.youtube.com" target = "_blank">
+                        <img src = "images/youtube.png" alt = "YouTube">
+                    </a>
+                    <a href = "https://www.facebook.com" target = "_blank">
+                        <img src = "images/facebook.png" alt = "Facebook">
+                    </a>
+                    <a href = "https://www.instagram.com" target = "_blank">
+                        <img src = "images/insta.png" alt = "Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <div class = "footer-links-wrapper">
+                
+                <div class = "footer-block">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "library.html">Movie Library</a></li>
+                        <li><a href = "review.html">Submit a Review</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-block genres-column-wrapper">
+                    <h4>Genres</h4>
+                    <div class = "genres-split-row">
+                        <ul>
+                            <li><a href = "library.html?genre=Action">Action</a></li>
+                            <li><a href = "library.html?genre=Comedy">Comedy</a></li>
+                            <li><a href = "library.html?genre=Drama">Drama</a></li>
+                            <li><a href = "library.html?genre=Horror">Horror</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href = "library.html?genre=Fantasy">Fantasy</a></li>
+                            <li><a href = "library.html?genre=Isekai">Isekai</a></li>
+                            <li><a href = "library.html?genre=Sci-Fi">Sci-Fi</a></li>
+                            <li><a href = "library.html?genre=Romance">Romance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "footer-block">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href = "about.html">About Us</a></li>
+                        <li><a href = "privacy.html">Privacy Policy</a></li>
+                        <li><a href = "terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p>&copy; 2026 Aniverse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="library.js"></script>
+
+</body>
+</html>

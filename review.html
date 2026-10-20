@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniverse - Submit Review</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo4.png" alt="Aniverse Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Movie Library</a></li>
+                <li><a href="review.html" class="active">Submit a Review</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+       <!-- Restored Left Sidebar -->
+        <aside class = "left-sidebar">
+            <div class = "sidebar-box dark-box">
+                <div class = "icon">🎬</div>
+                <h3>Submit a Review</h3>
+                <p>Share your honest thoughts about a title. Your review helps others discover great content.</p>
+            </div>
+
+            <div class = "sidebar-box light-box">
+                <h4>ℹ️ Guidelines</h4>
+                <ul>
+                    <li>✓ Be honest and constructive</li>
+                    <li>✓ Avoid spoilers without warning</li>
+                    <li>✓ Keep reviews respectful</li>
+                    <li>✓ Minimum 25 characters required</li>
+                </ul>
+            </div>
+
+            <div class = "sidebar-box light-box">
+                <h4>⭐ Recent Reviews</h4>
+                <div class = "review-item">
+                    <div class = "avatar">👤</div>
+                    <div class = "review-text">
+                        <strong>Alex M.</strong>
+                        <span>Attack on Titan — 9/10</span>
+                    </div>
+                </div>
+                <div class = "review-item">
+                    <div class = "avatar">👤</div>
+                    <div class = "review-text">
+                        <strong>Sara K.</strong>
+                        <span>Interstellar — 10/10</span>
+                    </div>
+                </div>
+                <div class = "review-item">
+                    <div class = "avatar">👤</div>
+                    <div class = "review-text">
+                        <strong>James R.</strong>
+                        <span>Mushoku Tensei — 9/10</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Review Form Section -->
+
+        <section class = "review-form-container">
+            
+            <h2> Movie Review Form </h2>
+            <p> All fields marked with an asterisk (*) are required </p>
+            
+
+            <form id = "mainReviewForm" novalidate>
+
+                <div class = "form-row">
+
+                    <div class = "form-group">
+                        <label for = "userName"> Full Name *</label>
+                        <input type = "text" id = "userName" placeholder = "e.g. John Doe">
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "userEmail">Email Address *</label>
+                        <input type = "email" id = "userEmail" placeholder = "e.g., john@example.com">
+                    </div>
+
+                </div>
+
+                <div class = "form-row">
+
+                    <div class = "form-group">
+                        <label for = "movieDropdown"> Select Title to review *</label>
+                        <select id = "movieDropdown">
+                            <option value = "">---- Choose a title ----</option>
+                            <option value = "Attack on Titan">Attack on Titan</option>
+                            <option value = "Dark Knight">Dark Knight</option>
+                            <option value = "The Eminence in Shadow">The Eminence in Shadow</option>
+                            <option value = "Conjuring">Conjuring</option>
+                            <option value = "Jujutsu Kaisen">Jujutsu Kaisen</option>
+                            <option value = "Interstellar">Interstellar</option>
+                            <option value = "Mushoku Tensei">Mushoku Tensei</option>
+                            <option value = "Inception">Inception</option>
+                            <option value = "More Than a Married Couple, But Not Lovers">More Than a Married Couple, But Not Lovers</option>
+                            <option value = "Matrix">Matrix</option>
+                            <option value = "That Time I Got Reincarnated as a Slime">That Time I Got Reincarnated as a Slime</option>
+                            <option value = "Gladiator">Gladiator</option>
+                            <option value = "Demon Slayer">Demon Slayer</option>
+                            <option value = "Terminator">Terminator</option>
+                            <option value = "Spirited Away">Spirited Away</option>
+                            <option value = "other">Other (Type Custom Title)</option>
+                        </select>
+
+                        <!-- This input is hidden until the user clicks 'Other' in the dropdown -->
+                        <input type = "text" id = "customMovieField" aria-label="Custom movie title" placeholder = "Type your custom title here" style = "display: none; margin-top: 10px;">
+                    </div>
+
+
+                    <div class = "form-group">
+                        <label for = "ratingBar">Your Rating * (1-10)</label>
+
+                        <div class = "slider-container">
+                            <input type = "range" id = "ratingBar" min = "1" max = "10" step = "1.0" value = "5.0">
+                            <span id = "ratingNumber">5.0 / 10</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="genreDropdown">Genre Being Reviewed *</label>
+                        <select id="genreDropdown">
+                            <option value="">--- Select a primary genre ---</option>
+                            <option value="Action">Action</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Isekai">Isekai</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Would You Recommend This?</label>
+
+                        <div class="radio-options">
+                            <input type="radio" id="recYes" name="recommendTitle" value="yes"> 
+                            <label for="recYes">Yes</label>
+                            
+                            <input type="radio" id="recNo" name="recommendTitle" value="no"> 
+                            <label for="recNo">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "reviewMessege">Your Review * (Min 25 chars)</label>
+                    <textarea id = "reviewMessege" rows = "6" placeholder = "Write your review here..."></textarea>
+                    <p id = "characterCount">0 / 1000 characters</p>
+                </div>
+
+                <div class = "form-group checkbox-group">
+                    <input type = "checkbox" id = "agreeTerms">
+                    <label for = "agreeTerms">I agree to the <a href = "terms.html">terms and conditions</a> *</label>
+                </div>
+
+                <div class = "form-buttons">
+                    <button type = "reset" id = "clearFormButton" class = "btn secondary"> Reset Form </button>
+                    <button type = "submit" id = "submitFormButton" class = "btn primary"> Submit Review </button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    
+       <footer>
+        
+        <div class = "footer-container">
+            
+            <div class = "footer-column brand-col">
+
+                <img src = "images/logo4.png" alt = "Aniverse Logo">
+                <p>Your Ultimate Entertainment Guide for Movies and Anime Series. Discover, Explore, and Share your Reviews with a Community of Enthusiasts.</p>
+                <div class = "footer-social">
+                    <a href = "https://www.youtube.com" target = "_blank">
+                        <img src = "images/youtube.png" alt = "YouTube">
+                    </a>
+                    <a href = "https://www.facebook.com" target = "_blank">
+                        <img src = "images/facebook.png" alt = "Facebook">
+                    </a>
+                    <a href = "https://www.instagram.com" target = "_blank">
+                        <img src = "images/insta.png" alt = "Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <div class = "footer-links-wrapper">
+                
+                <div class = "footer-block">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "library.html">Movie Library</a></li>
+                        <li><a href = "review.html">Submit a Review</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-block genres-column-wrapper">
+                    <h4>Genres</h4>
+                    <div class = "genres-split-row">
+                        <ul>
+                            <li><a href = "library.html?genre=Action">Action</a></li>
+                            <li><a href = "library.html?genre=Comedy">Comedy</a></li>
+                            <li><a href = "library.html?genre=Drama">Drama</a></li>
+                            <li><a href = "library.html?genre=Horror">Horror</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href = "library.html?genre=Fantasy">Fantasy</a></li>
+                            <li><a href = "library.html?genre=Isekai">Isekai</a></li>
+                            <li><a href = "library.html?genre=Sci-Fi">Sci-Fi</a></li>
+                            <li><a href = "library.html?genre=Romance">Romance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "footer-block">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href = "about.html">About Us</a></li>
+                        <li><a href = "privacy.html">Privacy Policy</a></li>
+                        <li><a href = "terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p>&copy; 2026 Aniverse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src = "review.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <media>
+        <title>Attack on Titan</title>
+        <type>Anime</type>
+        <year>2013</year>
+        <rating>9.0/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Drama</genre>
+            <genre>Fantasy</genre>
+        </genres>
+        <description>Humanity lives confined within massive walled cities to protect themselves from giant, mindless humanoids known as Titans. When a colossal Titan breaches the outer defenses, young Eren Jaeger vows to wipe them out completely.</description>
+        <image>./images/aot.png</image>
+    </media>
+    <media>
+        <title>The Conjuring</title>
+        <type>Movie</type>
+        <year>2013</year>
+        <rating>7.5/10</rating>
+        <genres>
+            <genre>Horror</genre>
+            <genre>Mystery</genre>
+        </genres>
+        <description>Paranormal investigators Ed and Lorraine Warren travel to a remote Rhode Island farmhouse to assist a terrified family experiencing malicious, terrifying supernatural manifestations.</description>
+        <image>./images/conjuring.png</image>
+    </media>
+    <media>
+        <title>Interstellar</title>
+        <type>Movie</type>
+        <year>2014</year>
+        <rating>8.7/10</rating>
+        <genres>
+            <genre>Sci-Fi</genre>
+            <genre>Drama</genre>
+        </genres>
+        <description>With Earth facing an agricultural collapse, a team of intrepid astronauts and explorers travels through a newly discovered wormhole in deep space to find a habitable new home for human civilization.</description>
+        <image>./images/interstella.png</image>
+    </media>
+    <media>
+        <title>The Matrix</title>
+        <type>Movie</type>
+        <year>1999</year>
+        <rating>8.7/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Sci-Fi</genre>
+        </genres>
+        <description>A disillusioned computer hacker discovers that his entire reality is an elaborate simulation controlled by malevolent cybernetic machines, joining a rebellion to liberate human minds.</description>
+        <image>./images/matrix.jpg</image>
+    </media>
+    <media>
+        <title>More than a Married Couple, but Not Lovers</title>
+        <type>Anime</type>
+        <year>2022</year>
+        <rating>8.0/10</rating>
+        <genres>
+            <genre>Comedy</genre>
+            <genre>Romance</genre>
+        </genres>
+        <description>High school students Jirou and Akari are forced into a mandatory school marriage simulation project where they must live together as a couple, despite both having crushes on completely different people.</description>
+        <image>./images/marriedcouple.png</image>
+    </media>
+    <media>
+        <title>Terminator 2: Judgment Day</title>
+        <type>Movie</type>
+        <year>1991</year>
+        <rating>8.6/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Sci-Fi</genre>
+        </genres>
+        <description>A reprogrammed T-800 cyborg is sent back in time to protect a young John Connor from a highly advanced, shape-shifting liquid metal liquid assassin known as the T-1000.</description>
+        <image>./images/terminator.png</image>
+    </media>
+    <media>
+        <title>The Eminence in Shadow</title>
+        <type>Anime</type>
+        <year>2022</year>
+        <rating>8.2/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Fantasy</genre>
+            <genre>Comedy</genre>
+            <genre>Isekai</genre>
+        </genres>
+        <description>Reincarnated into a magical world, Cid acts out his ultimate fantasy of becoming a shadowy mastermind orchestrating events from the background, unaware that the evil cult he invented is actually real.</description>
+        <image>./images/shadow.png</image>
+    </media>
+    <media>
+        <title>Titanic</title>
+        <type>Movie</type>
+        <year>1997</year>
+        <rating>7.9/10</rating>
+        <genres>
+            <genre>Romance</genre>
+            <genre>Drama</genre>
+        </genres>
+        <description>A young, aristocratic woman falls deeply in love with a free-spirited, working-class artist aboard the luxurious yet ill-fated maiden voyage of the R.M.S. Titanic.</description>
+        <image>./images/titanic.jpg</image>
+    </media>
+    <media>
+        <title>Inception</title>
+        <type>Movie</type>
+        <year>2010</year>
+        <rating>8.8/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Sci-Fi</genre>
+        </genres>
+        <description>A skilled corporate thief specializes in stealing valuable secrets from deep within the subconscious minds of targets during their dream states, taking on a final dangerous job to plant an idea instead.</description>
+        <image>./images/inception.jpg</image>
+    </media>
+    <media>
+        <title>Mushoku Tensei: Jobless Reincarnation</title>
+        <type>Anime</type>
+        <year>2021</year>
+        <rating>8.4/10</rating>
+        <genres>
+            <genre>Fantasy</genre>
+            <genre>Isekai</genre>
+            <genre>Action</genre>
+        </genres>
+        <description>A discouraged 34-year-old underachiever dies and is reborn into a magical fantasy universe as a child named Rudeus Greyrat. Retaining his memories, he resolves to master sorcery and live an honorable life.</description>
+        <image>./images/mushoku.png</image>
+    </media>
+    <media>
+        <title>The Dark Knight</title>
+        <type>Movie</type>
+        <year>2008</year>
+        <rating>9.0/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Drama</genre>
+        </genres>
+        <description>Batman must face his most devastating psychological and physical test yet when a psychopathic mastermind anarchist known as the Joker unleashes absolute chaos and violence across Gotham City.</description>
+        <image>./images/knight.jpg</image>
+    </media>
+    <media>
+        <title>That Time I Got Reincarnated as a Slime</title>
+        <type>Anime</type>
+        <year>2018</year>
+        <rating>8.1/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Fantasy</genre>
+            <genre>Isekai</genre>
+        </genres>
+        <description>An ordinary office employee is stabbed on the street and reincarnated into a high-fantasy realm as a low-level slime monster named Rimuru Tempest, acquiring immense powers to unite local tribes.</description>
+        <image>./images/slime.png</image>
+    </media>
+    <media>
+        <title>Spirited Away</title>
+        <type>Movie</type>
+        <year>2001</year>
+        <rating>8.6/10</rating>
+        <genres>
+            <genre>Fantasy</genre>
+        </genres>
+        <description>A young girl stumbles into an enchanted spirit world ruled by an ancient witch. After her parents are turned into pigs, she must work diligently in a magical bathhouse to win back their freedom.</description>
+        <image>./images/spiritedaway.jpg</image>
+    </media>
+    <media>
+        <title>Demon Slayer: Mugen Train</title>
+        <type>Anime</type>
+        <year>2020</year>
+        <rating>8.2/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Fantasy</genre>
+        </genres>
+        <description>Tanjiro Kamado and his demon-slaying companions board a mysterious passenger train to assist the powerful Flame Hashira, Kyojuro Rengoku, in eliminating a demon devouring passengers.</description>
+        <image>./images/demonslayer.png</image>
+    </media>
+    <media>
+        <title>Gladiator</title>
+        <type>Movie</type>
+        <year>2000</year>
+        <rating>8.5/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Drama</genre>
+        </genres>
+        <description>A betrayed Roman general is reduced to slavery after his family is brutally murdered by a corrupt emperor. He rises through the ranks of the gladiator arenas to exact his final vengeance.</description>
+        <image>./images/gladiator.jpg</image>
+    </media>
+    <media>
+        <title>Jujutsu Kaisen 0</title>
+        <type>Anime</type>
+        <year>2021</year>
+        <rating>7.9/10</rating>
+        <genres>
+            <genre>Action</genre>
+            <genre>Fantasy</genre>
+        </genres>
+        <description>A troubled high school student haunted by the powerful cursed spirit of his deceased childhood friend joins Tokyo Jujutsu High School to master his dangerous energy and break the curse.</description>
+        <image>./images/jjk.jpg</image>
+    </media>
+</library>

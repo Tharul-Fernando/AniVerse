@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Media Details - Aniverse</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <header>
+        <nav class = "navbar">
+            <a href = "index.html" class = "logo">
+                <img src = "images/logo4.png" alt = "Aniverse Logo">
+            </a>
+            <ul class = "nav-links">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "library.html">Movie Library</a></li>
+                <li><a href = "review.html">Submit a Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class = "details-viewport">
+        
+        <!-- The main container block. JS targets this ID if anything fails to load -->
+        <div id = "detailsSpace" class = "details-card">
+            
+            <!-- Left Column: Media Cover Art Poster Image -->
+            <div class = "details-poster-column">
+                <img id = "moviePoster" src = "" alt = "Loading Poster Art..." class = "details-main-img">
+            </div>
+
+            <!-- Right Column: All Text Fields and Data Inputs -->
+            <div class = "details-info-column">
+            
+                <!-- Red Media Type Badge (e.g. MOVIE / ANIME) -->
+                <span id = "movieType" class = "large-badge">LOADING...</span>
+                
+                <h1 id = "movieTitle" class = "details-title">Media Title</h1>
+                
+                <!-- Dynamic Genre Tags get loaded inside this container container by JS -->
+                <div id = "genresContainer" class = "tags-container"></div>
+                
+                <p class = "details-meta-text">📅 <strong>Year:</strong> <span id = "movieYear">—</span></p>
+                <p class = "details-rating-text">★ <strong>Community Score:</strong> <span id = "movieRating">—</span></p>
+                
+                <!-- Narrative Synopsis Text Box Block Area -->
+                <div class = "description-container">
+                    <h3>Synopsis</h3>
+                    <p id = "movieDescription">Retrieving narrative plot summary records from database array...</p>
+                </div>
+                
+                <!-- Bottom Navigation Button Row -->
+                <div class = "details-button-row">
+                    <a href = "library.html" class = "details-btn details-btn-secondary">← Return to Library</a>
+                    <a id = "reviewLink" href = "review.html" class = "details-btn details-btn-primary">✏️ Submit Review</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class = "footer-container">
+            
+            <div class = "footer-column brand-col">
+                <img src = "images/logo4.png" alt = "Aniverse Logo">
+                <p>Your Ultimate Entertainment Guide for Movies and Anime Series. Discover, Explore, and Share your Reviews with a Community of Enthusiasts.</p>
+                <div class = "footer-social">
+                    <a href = "https://www.youtube.com" target = "_blank">
+                        <img src = "images/youtube.png" alt = "YouTube">
+                    </a>
+                    <a href = "https://www.facebook.com" target = "_blank">
+                        <img src = "images/facebook.png" alt = "Facebook">
+                    </a>
+                    <a href = "https://www.instagram.com" target = "_blank">
+                        <img src = "images/insta.png" alt = "Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <div class = "footer-links-wrapper">
+                
+                <div class = "footer-block">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "library.html">Movie Library</a></li>
+                        <li><a href = "review.html">Submit a Review</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-block genres-column-wrapper">
+                    <h4>Genres</h4>
+                    <div class = "genres-split-row">
+                        <ul>
+                            <li><a href = "library.html?genre=Action">Action</a></li>
+                            <li><a href = "library.html?genre=Comedy">Comedy</a></li>
+                            <li><a href = "library.html?genre=Drama">Drama</a></li>
+                            <li><a href = "library.html?genre=Horror">Horror</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href = "library.html?genre=Fantasy">Fantasy</a></li>
+                            <li><a href = "library.html?genre=Isekai">Isekai</a></li>
+                            <li><a href = "library.html?genre=Sci-Fi">Sci-Fi</a></li>
+                            <li><a href = "library.html?genre=Romance">Romance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "footer-block">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href = "about.html">About Us</a></li>
+                        <li><a href = "privacy.html">Privacy Policy</a></li>
+                        <li><a href = "terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p>&copy; 2026 Aniverse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- The details script handles parsing parameters and updating fields -->
+    <script src = "details.js"></script>
+</body>
+</html>

@@ -1,0 +1,1235 @@
+/* 
+  =============================================================
+  1. BASE SETUP & TYPOGRAPHY
+  ============================================================= 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9; 
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 
+  =============================================================
+  2. NAVIGATION BAR
+  ============================================================= 
+*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d0e12; /* Exact color requested */
+    padding: 15px 40px;
+}
+
+/* This container acts as a frame to crop the negative margins of the image */
+.logo {
+    display: inline-block;
+    overflow: hidden; 
+    border-radius: 4px;
+}
+
+.logo img {
+    transition: transform 0.2s ease;
+    height: 120px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -35px;
+    margin-bottom: -35px;
+    border: none;
+    mix-blend-mode: difference;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #333333;
+}
+
+.nav-links a.active {
+    background-color: #ff4757; 
+}
+
+/* 
+  =============================================================
+  3. HERO SECTION (Home Page)
+  ============================================================= 
+*/
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background-color: #292929;
+    color: #ffffff;
+    padding: 60px 20px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    text-align: center;
+    border-bottom: 4px solid #ff4757;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
+}
+
+.hero h5 {
+    display: inline-block;
+    border: 1px solid #555555;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #9f9a9a;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 37px;
+    max-width: 800px; /* Constraining width breaks it into two lines perfectly */
+    margin: 0 auto 20px auto;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #b2bec3;
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background-color: #ff4757;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: #d13643;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+.btn.secondary:hover {
+    background-color: #ffffff;
+    color: #1a1a2e;
+}
+
+/* 
+  =============================================================
+  4. CATEGORY GRID (Home Page)
+  ============================================================= 
+*/
+
+.categories {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.categories h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #292929;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-grid .card {
+    background-color: #292929; 
+    width: 240px; /* Restored to 240px so exactly 4 fit in a row */
+    padding: 30px 15px; 
+    border: 1px solid #2b2d31; 
+    border-radius: 8px; 
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-grid .card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4757;
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.15); /* Soft red shadow to match the border */
+}
+
+/* Removed the circular background so the icons sit cleanly on the card */
+.category-grid .icon {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.category-grid h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.category-grid p {
+    color: #9f9a9a; /* Made the text brighter so it matches your old, highly-readable design */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 
+  =============================================================
+  5. LIBRARY PAGE ALIGNMENT
+  ============================================================= 
+*/
+
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+/* Making the path text smaller and more transparent/lighter */
+.path {
+    font-size: 13px; 
+    color: #4f555f; 
+    width: 100%;
+}
+
+/* Forcing the link to drop the default purple color and underline */
+.path a {
+    text-decoration: none;
+    color: #4f555f;
+    transition: 0.3s ease;
+}
+
+.path a:hover {
+    color: #ff4757;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+/* Making the description text smaller and lighter to match your reference */
+.header-text p {
+    font-size: 14px;
+    color: #4f555f;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+.controls input, .controls select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: 1px solid #eef0f2;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #57606f;
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Added the #ff4757 red hover effect specifically for the pills */
+.filter-btn:hover {
+    background-color: #ff4757;
+    color: #ffffff;
+    border-color: #ff4757;
+}
+
+/* The currently selected filter stays dark */
+.filter-btn.active {
+    background-color: #0d0e12;
+    color: #ffffff;
+    border-color: #0d0e12;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.movie-grid .card {
+    width: calc(25% - 18px); 
+    background-color: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.poster-box {
+    position: relative;
+    height: 330px;
+}
+
+.poster-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.type-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.info-box {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info-box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    font-size: 11px;
+    background-color: #f1f2f6;
+    color: #57606f;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.meta-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #4f555f;
+    margin-bottom: 15px;
+}
+
+.movie-grid .btn {
+    border-radius: 0; 
+    border-top: 1px solid #eef0f2;
+    background-color: #fcfcfc;
+    color: #333;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.movie-grid .btn:hover {
+    background-color: #ff4757;
+    color: #ffffff;
+}
+
+/* 
+  =============================================================
+  6. REVIEW PAGE FORM STYLING
+  ============================================================= 
+*/
+
+/* Uses the new HTML structure to automatically create two columns */
+main:has(.review-form-container) {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* ----------------------------------
+   LEFT SIDEBAR (Guidelines & Reviews)
+   ---------------------------------- */
+.left-sidebar {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-box {
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eef0f2;
+}
+
+.dark-box {
+    background-color: #0d0e12; 
+    color: #ffffff;
+}
+
+.dark-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dark-box p {
+    font-size: 13px;
+    color: #b2bec3;
+    line-height: 1.5;
+}
+
+.light-box {
+    background-color: #ffffff;
+}
+
+.light-box h4 {
+    border-bottom: 1px solid #eef0f2;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #2f3542;
+}
+
+.light-box ul {
+    list-style: none;
+}
+
+.light-box li {
+    margin-bottom: 10px;
+    color: #57606f;
+    font-size: 13px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #f1f2f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevents the avatar from squishing */
+}
+
+.review-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Transparent separator line */
+}
+
+/* Removes the line under the very last review to keep it clean */
+.review-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-text strong {
+    font-size: 14px;
+    color: #2f3542;
+}
+
+.review-text span {
+    font-size: 12px;
+    color: #747d8c;
+    margin-top: 2px;
+}
+
+/* ----------------------------------
+   MAIN FORM CONTAINER
+   ---------------------------------- */
+.review-form-container {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border: 2px solid #eef0f2;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Makes the form pop out */
+}
+
+.review-form-container h2 {
+    background-color: #0d0e12;
+    color: #ffffff;
+    padding: 25px 35px 5px 35px;
+    border-radius: 10px 10px 0 0;
+}
+
+.review-form-container > p {
+    background-color: #0d0e12;
+    color: #b2bec3;
+    padding: 0 35px 25px 35px;
+    font-size: 13px;
+}
+
+form {
+    padding: 35px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f3542;
+}
+
+/* Clear, perfectly aligned outlines for the inputs */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.02); 
+    transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff4757;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* ----------------------------------
+   SPECIAL INPUT CONTAINERS
+   ---------------------------------- */
+
+/* Gives the radio buttons and slider the exact same bordered box as text inputs */
+.slider-container,
+.radio-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+    height: 44px; /* Exact height match to the dropdowns */
+}
+
+/* Overriding the bold label specifically for the radio buttons */
+.radio-options label {
+    font-weight: normal;
+    font-size: 14px;
+    color: #2f3542 !important;
+    margin: 0;
+    cursor: pointer;
+}
+
+.radio-options input[type="radio"] {
+    accent-color: #ff4757; 
+    cursor: pointer;
+    margin: 0;
+}
+
+.slider-container input[type="range"] {
+    flex-grow: 1;
+    accent-color: #ff4757; 
+    cursor: pointer;
+}
+
+#ratingNumber {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f3542;
+}
+
+.light-text {
+    color: #747d8c;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Character count text aligned cleanly to the right */
+#characterCount {
+    font-size: 12px;
+    color: #a4b0be;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+    text-align: right; 
+}
+
+.checkbox-group {
+    flex-direction: row;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eef0f2;
+}
+
+.checkbox-group input[type="checkbox"] {
+    accent-color: #ff4757;
+    cursor: pointer;
+}
+
+.checkbox-group label a {
+    text-decoration: none !important; /* Removes the default underline line */
+    color: inherit !important;         /* Forces the link to match the exact dark color of the surrounding text */
+    font-weight: bold;                 /* Optional: keeps it slightly bold so users still know it is clickable */
+}
+
+.checkbox-group label a:hover {
+    color: #ff4757 !important;         /* Changes to your red accent color when hovered */
+}
+
+/* ----------------------------------
+   FORM BUTTONS
+   ---------------------------------- */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Targeting the ID directly forces the reset button to be visible */
+#clearFormButton {
+    background-color: #ffffff !important;
+    color: #333333 !important; 
+    border: 2px solid #cccccc !important;
+}
+
+#clearFormButton:hover {
+    background-color: #f1f2f6 !important;
+}
+
+/*
+  =============================================================
+  7. FOOTER 
+  ============================================================= 
+*/
+
+footer {
+    background-color: #0d0e12;
+    color: #ffffff;
+    padding: 40px 20px 20px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #222222;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container .brand-col {
+    width: 30%;
+    flex: none;
+}
+
+.brand-col img {
+    height: 80px;
+    width: auto;
+    margin-top: -20px;
+    max-width: 180px;
+    object-fit: contain;
+    border-radius: 4px;
+    mix-blend-mode: screen;
+}
+
+.brand-col p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    vertical-align: middle;
+    border-radius: 4px;
+    border: none;
+    mix-blend-mode: difference;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.footer-block h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.footer-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-block ul li a {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-block ul li a:hover {
+    color: #ff4757;
+}
+
+.genres-column-wrapper {
+    text-align: center;
+}
+
+.genres-split-row {
+    display: flex;
+    gap: 40px; 
+    justify-content: center;
+}
+
+.genres-split-row ul {
+    text-align: left;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #222222;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #57606f;
+    margin: 0;
+}
+
+/* =============================================================
+   8. MEDIA DETAILS VIEWPORT SPECIFICATIONS
+   ============================================================= */
+
+.details-viewport {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.details-card {
+    background-color: #292929; /* Exact container box dark fill from screenshot */
+    border: 1px solid #333333;
+    border-radius: 12px;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.details-poster-column {
+    flex: 1;
+    max-width: 340px;
+}
+
+.details-main-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    display: block;
+}
+
+.details-info-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* The red Type tag badge at the top right */
+.large-badge {
+    background-color: #ff4757;
+    color: #ffffff;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: fit-content;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.details-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tags-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+/* Gray background capsule shapes for details genre pills */
+.details-tag {
+    background-color: #2e3545 !important;
+    color: #cbd5e1 !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.details-meta-text {
+    font-size: 16px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.details-meta-text span {
+    color: #ffffff;
+}
+
+.details-rating-text {
+    font-size: 16px;
+    color: #ffa502; /* Gold text color output matching screenshot */
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.details-rating-text span {
+    color: #ffffff;
+}
+
+/* Synopsis Inner Border Separators[cite: 4] */
+.description-container {
+    margin: 20px 0 30px 0;
+    padding-top: 20px;
+    border-top: 1px solid #3f4145;
+}
+
+.description-container h3 {
+    font-size: 13px;
+    color: #ff4757; /* Pinkish red synopsis subtitle tag */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#movieDescription {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.details-button-row {
+    display: flex;
+    gap: 15px;
+}
+
+.details-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+/* Transparent Return Button Style */
+.details-btn-secondary {
+    background-color: transparent;
+    color: #ffffff !important;
+    border: 2px solid #4a5568 !important;
+}
+
+.details-btn-secondary:hover {
+    background-color: #4a5568;
+}
+
+/* Solid White Submit Button Style */
+.details-btn-primary {
+    background-color: #ffffff !important;
+    color: #0d0e12 !important;
+    border: 2px solid #ffffff !important;
+}
+
+.details-btn-primary:hover {
+    background-color: #ff4757 !important;
+    border-color: #ff4757 !important;
+}
+
+/* 
+  =============================================================
+  9. STATIC PAGES (About, Privacy, Terms)
+  ============================================================= 
+*/
+
+.static-page-layout {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.static-page-layout h1 {
+    font-size: 32px;
+    color: #0d0e12;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f1f2f6;
+    padding-bottom: 10px;
+}
+
+.static-page-layout h3 {
+    font-size: 20px;
+    color: #2f3542;
+    margin: 25px 0 10px 0;
+}
+
+.static-page-layout p, 
+.static-page-layout li {
+    font-size: 15px;
+    color: #57606f;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.static-page-layout ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   📱 MASTER RESPONSIVE MEDIA QUERIES (All Fixes Applied)
+   ========================================================================== */
+    
+   /* --- 1. TABLET SCREENS (Max Width: 992px) --- */
+@media screen and (max-width: 992px) {
+    
+    /* Checklist #2: Movie Cards - 3 per row on Tablet */
+    .movie-grid { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 24px; 
+    }
+    .movie-grid .card { 
+        width: 100%; /* Resets the calc() width from desktop so they expand */
+    }
+}
+
+/* --- 2. SMALL TABLET & MOBILE SCREENS (Max Width: 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* Checklist #1: Navigation & Header */
+    .navbar { 
+        flex-direction: column; /* Keeps the logo on top */
+        gap: 15px; /* Space between logo and the button row */
+        padding: 15px 10px; 
+    }
+
+    .logo img {
+        height: 60px; /* Kept small to save space */
+        width: 120px;
+        margin: 0; 
+    }
+
+    .nav-links { 
+        flex-direction: row; /* Aligns the links horizontally */
+        flex-wrap: wrap; /* Allows links to wrap to a new line on extra-small screens */
+        justify-content: center; /* Keeps the cluster of buttons perfectly centered */
+        width: 100%; 
+        gap: 10px; 
+    }
+
+    .nav-links a { 
+        display: inline-block;
+        text-align: center;
+        padding: 8px 16px; /* Slightly reduced padding so they fit side-by-side */
+        width: auto; 
+        border-radius: 25px; 
+        font-size: 13px; /* Reduced by 1px to help fit the long "Submit a Review" text */
+    }
+    
+    
+    /* Checklist #2: Movie Cards - 2 per row on Small Tablet */
+    .movie-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    /* Checklist #3: Library Filters & Controls */
+    /* We use 'display: contents' on the header to break the controls out, allowing us to reorder them cleanly across the main parent layout */
+    body:has(.library-header) main {
+        display: flex;
+        flex-direction: column;
+    }
+    .library-header { display: contents; }
+    .header-text { order: 1; margin-bottom: 20px; text-align: center; }
+    
+    .filters { 
+        order: 2; /* Forces Pills to jump above the search bar */
+        flex-direction: row; /* Aligns pills horizontally */
+        flex-wrap: wrap; /* Allows them to wrap to multiple lines smoothly */
+        justify-content: center; /* Centers the whole cluster of pills */
+        width: 100%; 
+        margin-bottom: 20px; 
+        gap: 8px; /* Slightly tighter gap to fit more on a row */
+    }
+    
+    .filter-btn { 
+        width: auto; /* Stops the buttons from stretching all the way across */
+        padding: 8px 14px; /* Slimmer padding so they fit side-by-side easily */
+        font-size: 13px; /* Slightly smaller text for mobile optimization */
+    }
+
+    .controls { 
+        order: 3; /* Keeps them underneath the genre pills */
+        flex-direction: row; /* Aligns the search bar and dropdown horizontally side-by-side */
+        width: 100%; 
+        margin-bottom: 30px; 
+        gap: 10px; /* Creates a clean gap between the two boxes */
+    }
+    
+    .controls input, .controls select { 
+        flex: 1; /* Forces both the input and select to share the row exactly 50/50 */
+        width: auto; /* Removes the 100% width restriction */
+        padding: 12px; /* Slims down the vertical padding so they don't look too bulky */
+        font-size: 13px; /* Slightly smaller text for smaller screens */
+    }
+    
+    .movie-grid { order: 4; }
+
+    /* Checklist #4: The Review Form & Guidelines */
+    main:has(.review-form-container) { 
+        flex-direction: column; 
+        gap: 25px; 
+    }
+    
+    .left-sidebar { 
+        order: 1; /* Sidebar jumps to the top */
+        width: 100%; 
+    }
+    
+    .review-form-container { 
+        order: 2; /* Form follows directly beneath */
+        width: 100%; 
+    }
+    
+    .form-row { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    
+    /* FIX: Specifically target ONLY text/email fields so radio/checkboxes are ignored */
+    .form-group input[type="text"], 
+    .form-group input[type="email"], 
+    .form-group select, 
+    .form-group textarea {
+        width: 100%; 
+    }
+
+    /* FIX: Force radio options to stay horizontal */
+    .radio-options {
+        flex-direction: row; 
+        flex-wrap: nowrap; /* Prevents them from dropping to new lines */
+        gap: 20px; /* Space between Yes and No */
+        padding: 12px 16px;
+    }
+
+    /* Keep the slider responsive */
+    .slider-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+    }
+
+    /* FIX: Clean up the Terms & Conditions checkbox alignment */
+    .checkbox-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Vertically centers the text with the checkbox */
+        gap: 12px; /* Adds breathing room between the box and the text */
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+        width: auto; /* Overrides any stretching */
+        flex-shrink: 0; /* Prevents the checkbox from being squished by the text */
+        margin: 0;
+    }
+
+    /* Checklist #5: Details Page */
+    .details-card { 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 25px 20px; 
+    }
+    .details-poster-column { 
+        max-width: 100%; 
+        width: 100%; 
+        text-align: center;
+    }
+    .details-main-img { 
+        max-width: 320px; /* Maintains high-res scaling without getting cut off */
+        margin: 0 auto; 
+    }
+    .details-info-column { 
+        text-align: center; 
+        align-items: center; 
+        width: 100%;
+    }
+    .tags-container, .details-meta-text, .details-rating-text, .details-button-row {
+        justify-content: center;
+    }
+    .details-button-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .details-btn { width: 100%; }
+
+    /* Checklist #6: Footer */
+    .footer-container { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 40px; 
+    }
+    .footer-container .brand-col, .footer-links-wrapper {
+        width: 100%; /* Forces columns to stack into a single column */
+    }
+    .footer-links-wrapper { 
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    .brand-col img { margin: 0 auto 15px auto; display: block; }
+    .footer-social { justify-content: center; }
+    .genres-split-row { justify-content: center; gap: 20px; }
+    .genres-split-row ul { text-align: center; }
+}
+
+/* --- 3. MOBILE SCREENS (Max Width: 480px) --- */
+@media screen and (max-width: 480px) {
+    
+    /* Checklist #2: Movie Cards - 1 per row (Full Width) */
+    .movie-grid { 
+        grid-template-columns: 1fr; /* Ensures cards are never thin or squashed */
+    }
+
+    /* Home Page specific button spacing for small screens */
+    .hero-buttons { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .btn { width: 100%; text-align: center; }
+    
+    /* Home Page Category Grid */
+    .category-grid .card { width: 100%; }
+}
